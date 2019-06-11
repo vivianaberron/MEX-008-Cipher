@@ -1,9 +1,13 @@
 .font {
-
+    font-family: 'Quicksand', sans-serif;
 }
 
 .aeropuerto {
-
+    background-image:url(aeropuerto-personas.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   background-position: absolute;
 }
 
 .button {

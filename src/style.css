@@ -21,7 +21,7 @@
 
 }
 .aeropuerto {
-    background-image:url(aeropuerto-personas.svg);
+    background-image:url(svg/aeropuerto-personas.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -97,3 +97,36 @@
        color: #FFFBFA;
        opacity: 1;
     }
+.decode {
+    background-image: url(svg/decode.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+   background-position: absolute;
+}
+
+.encode {
+    background-image: url(svg/Encode.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+   background-position: absolute;
+}
+
+.FAQ {
+    background-image: url(svg/FAQ.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+   background-position: absolute;
+
+}
+
+.Soporte {
+    background-image: url(svg/support1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+   background-position: absolute;
+}
+

@@ -1,4 +1,15 @@
 # Cifrado César
+1 Pensé que una manera de utilizar el cifrado podría ser para clasificar cosas y hacer que sea más improbable que se pierdan. Pensé en las maletas de los aeropuertos y en la vulnerabilidad del equipaje cuando llega al país de destino.
+Después de hacer mi prototipo en figma https://www.figma.com/file/W9zDf6Lqzcv3sZUt4U77oBUw/Untitled?node-id=0%3A1, decidí comenzar a configurar el estilo en CSS. Hice un esqueleto de todas las ventanas y de los botones principales que 
+voy a necesitar. Me centré en que las ventanas fueran llamativas y que las rutas fuera fáciles de utilizar, porque los 
+usuarios generalmente tendrían prisa de recoger sus cosas.
+
+Traté que todos los backgrounds fueran relacionados al propósito de la aplicación.
+Mi último avance fue en pintar un formulario para aplicar la función que contiene la fórmula para cifrar
+
+
+
+
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 

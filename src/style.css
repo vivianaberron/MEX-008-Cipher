@@ -128,3 +128,44 @@
    background-position: absolute;
 }
 
+.opacidad2 {
+    background-color: #FEECE3;
+    opacity: 0.9;
+    height: 600px;
+    width: 850px;
+    margin: auto;
+    margin-bottom: 120px;
+    text-align: center;
+
+
+}
+
+.cipherBox { 
+    height: 50px;
+    width: 800px;
+   border-color:  #805857;
+   border-width: 2px;
+   border-style: solid;
+   border-radius: 5px;
+   box-align: center;
+   margin-top: 10px;
+   opacity: 0.9;
+   background-color: #E6D5CC;
+   text-decoration: none;
+}
+.cipherBox:hover {
+    color: #803D3B;
+}
+
+#font3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    color: #040404;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#font3:hover{
+    color: #CC8D8B;
+}
+

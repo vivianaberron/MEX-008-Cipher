@@ -258,22 +258,23 @@
 .opacidad4 {
        background-color: #80321F;
         opacity: 0.9;
-        height: 600px;
-        width: 850px;
-        margin: auto;
-        margin-bottom: 120px;
-        text-align: center;
-}
-
-.opacidad5 {
-       background-color: #805857;
-        opacity: 0.9;
         height: 900px;
         width: 800px;
         margin: auto;
         margin-bottom: 120px;
+        margin-top: 40px;
         text-align: center;
-        margin-top: 60px;
+}
+
+.opacidad5 {
+       background-color: #C09C9C;
+        opacity: 0.9;
+        height: 700px;
+        width: 700px;
+        margin: auto;
+        margin-bottom: 120px;
+        text-align: center;
+        margin-top: 40px;
 
 }
 .boxDecode { 
@@ -337,5 +338,56 @@
    text-decoration: none;
   width: 250px;
   height: 45px;
+}
+
+#font6  {
+    font-family: 'Barlow', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #FAEFEF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#font7  {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FAEFEF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#font8  {
+    font-family: 'Barlow', sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #000000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#font9  {
+    font-family: 'Barlow', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #000000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#font10  {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #000000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 

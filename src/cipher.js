@@ -9,14 +9,14 @@ window.cipher = {
         box = box + cipherLetter;
       }
      return box
-    }
+    },
 
  decode: (string, number) => {
    //recibiendo mensaje
      let boxDecode = ''; //Contiene la palabra a descifrar 
         for (let i = 0; i< string.length;i++){
           let newAsciiDecode = string.charCodeAt(i);
-           let cipherAsciiDecode = (newAscii+65-number)%26+65;
+           let cipherAsciiDecode = (newAscii+65-number+52)%26+65;
             let cipherLetterD = (String.fromCharCode (cipherAscii));
            boxDecode = boxDecode + cipherLetter;
         }

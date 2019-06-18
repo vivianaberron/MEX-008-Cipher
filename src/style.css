@@ -129,7 +129,7 @@
 }
 
 .opacidad2 {
-    background-color: #FEECE3;
+    background-color: #FFFBEC;
     opacity: 0.9;
     height: 600px;
     width: 850px;
@@ -157,15 +157,88 @@
     color: #803D3B;
 }
 
-#font3 {
+#font4{
     font-family: 'Barlow', sans-serif;
-    font-size: 25px;
-    color: #040404;
+        font-size: 30px;
+        font-weight: bolder;
+        color: #51504F;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+}
+
+.boxOffset {
+    border-color:  #805857;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    box-align: center;
+   margin-top: 10px;
+   opacity: 0.9;
+   background-color: #E6D5CC;
+   text-decoration: none;
+    
+
+}
+.botonCode { 
+    border-color:  #805857;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    box-align: center;
+   margin-top: 10px;
+   background-color: #805857;
+   text-decoration: none;
+  width: 300px;
+  height: 50px;
+    
+}
+
+.cipherText {
+    width: 700px;
+    height: 130px;
+    background-color: #FFA18A;
+    margin-left: 75px;
+
+}
+
+.botonLimpiar {
+    border-color:  #805857;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    box-align: center;
+   margin-top: 10px;
+   background-color: #805857;
+   text-decoration: none;
+  width: 250px;
+  height: 45px;
+}
+
+  #font5  {
+    font-family: 'Barlow', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #51504F;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-#font3:hover{
-    color: #CC8D8B;
+
 }
 
+.botonRuta {
+    text-decoration: none;
+    border-color:  #807671;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    box-align: center;
+   margin-top: 10px;
+   background-color: #807671;
+   text-decoration: none;
+  width: 200px;
+  height: 40px;
+ 
+
+}

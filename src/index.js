@@ -9,7 +9,7 @@ const cipherButtonD = document.getElementById("boton-decode");
  cipherButtonD.addEventListener("click", function () {
   let cipherTextD = document.getElementById("cipher-box-decode").value;
   let cipherOffset = document.getElementById("offset-decode").value;
-  document.getElementById("text-decoe").innerHTML = window.cipher.decode(cipherTextD, cipherOffset);
+  document.getElementById("text-decode").innerHTML = window.cipher.decode(cipherTextD, cipherOffset);
 
  });
 

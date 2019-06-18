@@ -1,15 +1,16 @@
 window.cipher = {
-  encode: (string, number ) => {
+  encode: (number, string ) =>{
     //recibiendo mensaje
     let cipherEncode = ''; //Contiene la palabra a cifrar
-      for (let i = 0; i< string.length;i++){
+    for (let i = 0; i < string.length ;i++){
        let newAscii = string.charCodeAt(i); //Recorriendo caracteres
       let cipherAscii = (newAscii-65+number)%26+65; //aplicando fórmula de cifrado
         let cipherLetter = (String.fromCharCode (cipherAscii));
-        box = box + cipherLetter;
+        cipherEncode = cipherEncode + cipherLetter;
       }
-     return box
+     return cipherEncode
     },
+   
 
  decode: (string, number) => {
    //recibiendo mensaje

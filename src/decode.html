@@ -9,11 +9,25 @@
 
 </head>
 <body class="decode"> <a class="font"></a>
-  <h1 id="font5"> Obtén una clave de identificación para tu maleta </h1>
-    <div id="font4" class="opacidad2"> 
-      <p> Ingresa tu destino </p>
-      <textarea id="cipher-box-encode" class="cipherBox"  placeholder="Ingresa el destino y la inicial de tu nombre"></textarea>
+  <h1 id="font5"> Canjea tu clave única </h1>
+    <div id="font4" class="opacidad3"> 
+      <p> Ingresa tu clave </p>
+      <textarea id="cipher-box-encode" class="boxDecode"  placeholder="Ingresa tu clave"></textarea>
         <div> 
             <a>  <br>  </a>
+        <label id="font4" class="label"> Ingresa tu número de asiento </label>
+     <input type="number" id="offset-decode" class="boxOffset2">
+     </div> 
+     <a>  <br>  </a>
+     <button id="cipher-box-decode" title="Reclama tu equipaje" alt="Reclama tu maleta" class="botonDecode"> Reclama tu equipaje </button>
+       <div id="cipher-box-decode"class="cipherTextDecode"> 
+         <p id="text-decode"></p>
+        </div> 
+        <div> 
+        <a>  <br>  </a>
+        <button onclick="location.reload();" title="Limpiar datos" alt="refresh" class="botonLimpiar2">Limpiar</button>
+        </div> 
+    
+        </div>
 </body>
 </html>

@@ -198,7 +198,7 @@
 .cipherText {
     width: 700px;
     height: 130px;
-    background-color: #FFA18A;
+    background-color: #E6C5B8;
     margin-left: 75px;
 
 }
@@ -229,16 +229,113 @@
 
 .botonRuta {
     text-decoration: none;
-    border-color:  #807671;
+    border-color:  #E6C5B8;
     border-width: 2px;
     border-style: solid;
     border-radius: 7px;
     box-align: center;
    margin-top: 10px;
-   background-color: #807671;
+   background-color: #E6C5B8;
    text-decoration: none;
   width: 200px;
   height: 40px;
  
 
 }
+
+.opacidad3 {
+    background-color: #FCEEC6;
+    opacity: 0.9;
+    height: 600px;
+    width: 850px;
+    margin: auto;
+    margin-bottom: 120px;
+    text-align: center;
+
+
+}
+
+.opacidad4 {
+       background-color: #80321F;
+        opacity: 0.9;
+        height: 600px;
+        width: 850px;
+        margin: auto;
+        margin-bottom: 120px;
+        text-align: center;
+}
+
+.opacidad5 {
+       background-color: #805857;
+        opacity: 0.9;
+        height: 900px;
+        width: 800px;
+        margin: auto;
+        margin-bottom: 120px;
+        text-align: center;
+        margin-top: 60px;
+
+}
+.boxDecode { 
+    height: 50px;
+    width: 800px;
+   border-color:  #E8D4C8;
+   border-width: 2px;
+   border-style: solid;
+   border-radius: 5px;
+   box-align: center;
+   margin-top: 10px;
+   opacity: 0.9;
+   background-color: #E8DCC8;
+   text-decoration: none;
+}
+
+.boxOffset2 {
+    border-color:  #E8D4C8;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    box-align: center;
+   margin-top: 10px;
+   opacity: 0.9;
+   background-color: #E8DCC8;
+   text-decoration: none;
+    
+
+}
+
+.botonDecode { 
+    border-color:  #6E6346;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    box-align: center;
+   margin-top: 10px;
+   background-color: #6E6346;
+   text-decoration: none;
+  width: 300px;
+  height: 50px;
+    
+}
+
+.cipherTextDecode {
+    width: 700px;
+    height: 130px;
+    background-color: #E6D5CC;
+    margin-left: 75px;
+
+}
+
+.botonLimpiar2 {
+    border-color:  #6E6346;;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    box-align: center;
+   margin-top: 10px;
+   background-color: #6E6346;;
+   text-decoration: none;
+  width: 250px;
+  height: 45px;
+}
+

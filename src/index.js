@@ -1,13 +1,7 @@
-// Trayendo elementos desde encode.html
+// Trayendo elementos desde encode.html para aplicar encode
 let cipherButton = document.getElementById('cipher-button');
 let cipherInput = document.getElementById('cipher-box-encode');
 let encodeOffset = document.getElementById('cipher-offset');
-
-//cipherButton.addEventListener ('click', () => {
-   // let cipherText = cipherEncode.value;
-   // let encodeOffsetValue = parseInt(encodeOffset.value);
-   // let 
-// });
 
 const mostrarTexto = () => {
  let cipherBlankSpace = document.getElementById('text-encode')
@@ -18,6 +12,10 @@ const mostrarTexto = () => {
 };
 
 cipherButton.addEventListener('click', mostrarTexto);
+
+
+
+
 
 
 

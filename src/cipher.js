@@ -12,17 +12,19 @@ window.cipher = {
     },
    
 
- decode: (string, number) => {
+ decode: (number, string) => {
    //recibiendo mensaje
-     let boxDecode = ''; //Contiene la palabra a descifrar 
-        for (let i = 0; i< string.length;i++){
-          let newAsciiDecode = string.charCodeAt(i);
+     let cipherDecode = ''; //Contiene la palabra a descifrar 
+        for (let i = 0; i < string.length;i++){
+          console.log(number);
+          console.log(string);
+          let newAscii = string.charCodeAt(i);
            let cipherAsciiDecode = (newAscii+65-number+52)%26+65;
-            let cipherLetterD = (String.fromCharCode (cipherAscii));
-           boxDecode = boxDecode + cipherLetter;
+            let cipherLetterD = (String.fromCharCode (cipherAsciiDecode));
+           cipherDecode = cipherDecode + cipherLetterD;
         }
-        return boxDecode
-      } 
+        return cipherDecode
+ }
 
 
   

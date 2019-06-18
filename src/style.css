@@ -390,4 +390,18 @@
     margin-right: auto;
 
 }
+.botonRuta2 {
+    text-decoration: none;
+    border-color:  #C2AA75;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    box-align: center;
+   margin-top: 10px;
+   background-color: #C2AA75;
+   text-decoration: none;
+  width: 200px;
+  height: 40px;
+ 
 
+}

@@ -13,7 +13,7 @@ window.cipher = {
         let cipherLetter = (String.fromCharCode (cipherAscii));
         cipherEncode = cipherEncode + cipherLetter;
       } else {
-        cipherEncode = cipherEncode + newAscii[i];
+        cipherEncode = cipherEncode + string[i];
       }
     }
      return cipherEncode;
@@ -34,7 +34,7 @@ window.cipher = {
              let cipherLetterD = (String.fromCharCode (cipherAsciiDecode));
             cipherDecode = cipherDecode + cipherLetterD;
            } else if 
-           (cipherDecode = cipherDecode + newAscii[i]);
+           (cipherDecode = cipherDecode + string[i]);
         }
         return cipherDecode;
       }};

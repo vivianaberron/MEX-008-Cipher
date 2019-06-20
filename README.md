@@ -6,7 +6,51 @@ usuarios generalmente tendrían prisa de recoger sus cosas.
 
 Traté que todos los backgrounds fueran relacionados al propósito de la aplicación.
 Mi último avance fue en pintar un formulario para aplicar la función que contiene la fórmula para cifrar
+ --------------
+ ¿Cómo pensé en el usuario y cómo llegué a esas conclusiones?
+El primer usuario que llegó a mi cabeza fue una persona que necesitaba codificar información delicada, ya fuese con el propósito de mantenerla en secreto o como una manera de no perder los datos en su memoria. 
+Finalmente y después de plantearme varias ideas, decidí que podía explorar otras opciones, y que, al contrario de lo pensado en un principio, el usuario podría hacer uso de su memoria o de alguna mnemotecnia para codificar y decodificar información. Sin embargo, todavía no sabía exactamente hacia qué o cómo aplicarlo. 
+Pensé en que dicho código podría ligarse a alguna entidad de la vida diaria, como las pertenencias personales. Luego pensé que sería buena idea un sistema de paquetería sin intermediarios, aunque también pensé que usar lockers generalmente solucionaba el problema, y agregar pasos extra a algo que ya funciona no es precisamente útil.
+Después pensé en los aeropuertos y en lo expuestas que están las maletas todo el tiempo: desde el momento de documentar, hasta el momento que aparecen en la banda, las maletas pueden perderse entre miles de paquetes y más maletas, algunas incluso idénticas.
+Pensé que sería buena idea enfocar la temática del proyecto hacia el equipaje documentado, pues a veces no basta con poner un sticker o un listón en la maleta. Y aunque las aerolíneas juran tener un control sobre el equipaje que suben al avión, siguen existiendo casos de equipaje perdido o robado en el transcurso del viaje.
+Mis pasos para concluir el proyecto fueron los siguientes:
+1. Realicé un prototipo en papel con el cual yo misma realicé un test a través de la aplicación Marvel.
+2. Realicé varios tests con mis amigos para probar la funcionalidad de las rutas y de la temática.
+3. Cambié de prototipo y de temática, decidí prototipar esta vez con Figma.
+4. Probé el prototipo con mis amigos, les platiqué acerca de la nueva temática. Las rutas fueron fáciles de usar y no tuvieron preguntas acerca de cómo usar la maqueta, excepto por la funcionalidad del cifrado César.
+5. Hice mi maqueta en HTML y CSS, utilicé el prototipo de Figma para guiarme.
+6. Comencé a investigar sobre ASCII y a leer los recursos que venían indicados en el README.
+7. Probé pequeñas partes de código en Repl.it y me apoyé con mis compañeras para detectar errores de sintaxis.
+8. Completé el diseño con CSS, terminé de escribir los archivos HTML.
+9. Cuando logré completar el archivo cipher.js comencé a escribir el archivo index.js para estructurar el DOM. Llamé a los id de mis HTML con documen.getElementById y los asigné a una variable. Luego los reasigné dentro de una función flecha, y utilicé .value para que me devolvieran el string y el valor ingresado en el input. Mandé llamar a window.cipher.encode para ejecutar encode con los datos que el usuario ingrese en el input. También mandé llamar al espacio en blanco que serviría como contenedor de los resultados.
+10. Corrí los test y corregí los errores que me arrojó la terminal
+Introducción a la aplicación
+Para descargar la aplicación se pueden seguir estos pasos:
+Entrar al link de GitHub https://github.com/vivianaberron/MEX-008-Cipher y dar click en ‘download zip’ para obtener una descarga de los archivos comprimidos. Éstos se pueden correr a través de un editor de código como Visual Code o Atom.
+Para entrar a la aplicación sin tener una copia local de los archivos es necesario tener el link de GH pages (https://vivianaberron.github.io/MEX-008-Cipher/src/).  Dicho link funciona como si el repositorio estuviese alojado en algún hosting. Al entrar, la página tiene varios botones, de arriba hacia abajo tienen la siguiente funcionalidad: 
+-FAQ: dirige a una ventana que contiene varias preguntas frecuentes que podrían surgir al usar la aplicación.
+-Soporte: dirige a una ventana que explica el procedimiento en caso de pérdida del equipaje.
+-Genera un código: dirige a una ventana que tiene varios cuadros de texto. El primer cuadro pide que se ingrese el destino, la inicial del nombre del pasajero y el vuelo. El segundo cuadro pide el número de asiento. 
+Al dar click en ‘obtén tu código’, la aplicación arroja una clave única para identificar tus maletas. Todo el equipaje de un único pasajero está ligado a su vuelo, a su asiento y a su nombre. 
+-Recupera tu equipaje: ayuda a que el staff verifique, con de los datos proporcionados por el cliente, que el equipaje le pertenezca y haya sido entregado. Se ingresa el código y el número de asiento, el resultado son los datos del cliente, que deben cotejarse con el pase de abordar.
+Funcionalidad de la app
+La aplicación está pensada para ser una herramienta utilizada por las aerolíneas para reducir sus pérdidas de equipaje o el robo de éste cuando las pertenencias de los pasajeros estén bajo su responsabilidad. Así mismo, permite que los pasajeros dejen una constancia extra de la documentación de su equipaje, de tal manera que las maletas que pertenecen a un asiento de un vuelo, deban ir en el mismo trayecto. En caso de que eso no suceda, permite que la aerolínea tenga un rastreo más eficaz del equipaje de los pasajeros y, por tanto, podría ayudar a reducir el tiempo de respuesta ante una reclamación.
+Modelo de negocio
+La aplicación está planeada para darle un valor añadido al servicio de la aerolínea que lo contrate. La aerolínea sería la encargada de ofrecer o proporcionar la opción de tener un equipaje con rastreo (de modo que, incluso, podría cobrarse como un servicio plus o extra). La aplicación puede comprarse o rentarse, y adaptarse al esquema de negocio de cada empresa. En una versión más elaborada, podría permitirle al usuario seguir su equipaje, tal como sucede con las aplicaciones de paquetería, e incluso generar bloqueos especiales para sólo liberar las claves una vez que el pasajero y las maletas estuviesen documentadas en el mostrador.
+Un extra es que la aplicación reduciría la posibilidad de subir maletas sin dueño, hecho mismo que podría ayudar a reducir atentados, o incluso, a reducir retrasos en caso de que el pasajero no aborde el avión, pues podría identificarse más rápido la maleta de quien no está adentro de la cabina.
+UX
+¿Quiénes son los principales usuarios del producto?
+Aerolíneas que desean ofrecer un servicio plus o extra para asegurar el equipaje. Clientes de las aerolíneas que prefieren asegurar sus pertenencias, incluso después de la documentación de éste.
+¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
+Evitar pérdidas de equipaje, tener mayor control sobre éste una vez que esté bajo su resguardo.
+¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
+Podría reducir drásticamente el tiempo de retraso en caso de que una persona haya documentado y no aborde el avión, reduciría por tanto, costos e impuestos generados por dicho retraso. También reduciría los costos por equipaje perdido y ayudaría a tener mayores índices de satisfacción con los clientes.
+Diseño
+Las rutas de mi aplicación están divididas en dos partes: cuando se genera un código, se espera que el usuario sea el cliente que está documentando. Cuando se recuperan los datos, se espera que una persona del staff, o algún mecanismo de supervisión coteje los datos del equipaje. 
+De tal modo, que ambas rutas están separadas. 
+También busqué que existieran botones para regresar al inicio o para avanzar dependiendo de quien esté usando la aplicación (un cliente puede avanzar desde ‘genera tu código’ hasta ‘recupera tu equipaje’, o alguien del staff puede únicamente ingresar a ‘recupera tu equipaje’).
 
+-----------------
 
 
 

@@ -3,12 +3,12 @@ window.cipher = {
     //recibiendo mensaje
     let cipherEncode = ''; //Contiene la palabra a cifrar
     for (let i = 0; i < string.length; i++) { //Recorriendo caracteres
-       let newAscii = string.charCodeAt(i); 
-       if (newAscii >= 65 && newAscii <= 90){
+       let newAscii = string.charCodeAt(i); //Convirtiendo a ASCII
+       if (newAscii >= 65 && newAscii <= 90){ // Índices para mayúsculas
         let cipherAscii = (newAscii - 65 + number) % 26 + 65; //aplicando fórmula de cifrado
         let cipherLetter = (String.fromCharCode (cipherAscii));
-        cipherEncode = cipherEncode + cipherLetter;
-      } else if  (newAscii >= 97 && newAscii <= 122){
+        cipherEncode = cipherEncode + cipherLetter; 
+      } else if  (newAscii >= 97 && newAscii <= 122){//Índices para minúsuculas
         let cipherAscii = (newAscii - 97 + number) % 26 + 97; //aplicando fórmula de cifrado
         let cipherLetter = (String.fromCharCode (cipherAscii));
         cipherEncode = cipherEncode + cipherLetter;

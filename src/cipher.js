@@ -33,8 +33,10 @@ window.cipher = {
             let cipherAsciiDecode = (newAscii-97-number+52)%26+97;
              let cipherLetterD = (String.fromCharCode (cipherAsciiDecode));
             cipherDecode = cipherDecode + cipherLetterD;
-           } else if 
-           (cipherDecode = cipherDecode + string[i]);
+           } else {
+          cipherDecode = cipherDecode + string[i];
         }
+      }
         return cipherDecode;
-      }};
+    }
+  };

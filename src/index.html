@@ -1,38 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-<meta charset="utf-8">
-<title> Safe Case: claves únicas para tus maletas</title>
-<link rel="shortcut icon" href="svg/suitcase.ico" type="image/x-icon">
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Barlow:100,200&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Safe Case: claves únicas para tus maletas</title>
+ <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://kit.fontawesome.com/12fa5ec982.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <link rel="stylesheet" href="./fonts/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="svg/suitcase.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
 
 </head>
 
 
 
-<body class="aeropuerto"> <a class="font"></a>
+<body>
+ <!---Header-->
  <header>
-   <div>
-  <a class="button2" title="¿Tienes alguna duda?" alt="Frecuent ask questions" href="FAQ.html"> FAQ </a>
-
-    <a class="button2"  title="¿Podemos ayudarte?" alt="Soporte" href="soporte.html"> Soporte </a>
-  </div>
+    <nav> 
+<!---Mobile-->
+        <ul class="menu">
+            <li>
+              <i class="fas fa-bars"></i>
+                <ul>
+                    <li><a>Inicia sesión</a></li>
+                    <li><a>Regístrate</a></li>
+                </ul>
+            </li>
+        </ul>
+<!---Desktop-->
+        <ul class="nomobile-menu">
+            <li><a>Inicia sesión</a></li>
+            <li><a>Regístrate</a></li>
+        </ul>
+    </nav>
 </header>
     <main>
-   , <div class="opacidad" >
-       <a>  <br>  </a>
-       <a class="font">Safe case
-        <a>  <br>  </a>
-        <a>  <br>  </a>
-        <a>  <br>  </a>
-        <a class="button1" title="Obtén un código" alt="Genera un código" href="encode.html" > Genera un código </a>
-        <a>  <br>  </a>
-        <a>  <br>  </a>
-        <a>  <br>  </a>
-        <a class="button1" title="Canjea tu código" alt="Recupera tu maleta" href="decode.html" > Recupera tu maleta </a>
+<!--Sección bienvenidad mobile-->
+      <section class="airport">
+   ,     <div class="opacidad" >
+     <box id="info-text">
+                 <h1> Safe case </h1>
+
+                 <h2>Claves únicas para tus maletas</h2>
+
+                 <p>Reclama tu equipaje de manera segura</p>
+                
+                 <button type="button" class="btn btn-outline-dark"><a id="start-now" href="cipher.html">¡Comienza ya!</a></button>
+                </box>
    
-      </a> 
+      
     </div>
     
      
@@ -44,6 +69,47 @@
 
 
 </main>
+
+<!--Footer-->
+<footer>
+    <div class="footer-center">
+        <div>
+</div>
+<div>
+   <div class="footer-content">
+    <div class="footer-menu">
+        <ul>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="soporte.html">Support</a></li>
+                <li><a href="https://github.com/vivianaberron/MEX-008-Cipher">Terms & conditions</a></li>
+            </ul>
+        </div>
+        </div>
+        </div>
+        <p class="copyright"> &copy;  2019 Safecase Inc.</p>
+</div>
+</div>
+    
+</footer>
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--Firebase-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#reserved-urls -->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+     <script type="text/javascript" src="./firebase.js"></script>
 </body>
 </html>
 

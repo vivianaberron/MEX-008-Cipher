@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Safe Case: claves únicas para tus maletas</title>
+ <!-- Initialize Firebase -->
+    <!-- <script src="/__/firebase/init.js"></script> -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://kit.fontawesome.com/12fa5ec982.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <link rel="stylesheet" href="./fonts/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="svg/suitcase.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!--Menu lateral-->
+        <div class="ct" id="t1">
+                <div class="ct" id="t2">
+                  <div class="ct" id="t3">
+                    <div class="ct" id="t4">
+                       <div class="ct" id="t5">
+                        <ul id="menu">
+                          <a href="#t1"><li class="icon fa fa-plane-departure" id="uno"></li></a> 
+                          <a href="#t2"><li class="icon fa fa-plane-arrival" id="dos"></li></a>
+                          <a href="#t3"><li class="icon fa fa-id-badge" id="tres"></li></a>
+                          <a href="#t4"><li class="icon fa fa-info" id="cuatro"></li></a> 
+                          <!-- <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a> -->
+                        </ul>
+
+                      <!--Obtén una clave para tu maleta-->
+                        <div class="page" id="p1">
+                           <section class="main-text">
+                                <box id="encode-title" class="title main-text"><p> Claves únicas para tus maletas</p></box>
+                         <div>
+                          <button id="encode-button" title="Obtén una clave" alt="Encode" type="button" class="btn btn-outline-dark"><a href="encode.html">Obtén una clave para tu maleta</a></button>
+                         </div>
+                         </div>
+                        </section>  
+                        </div>
+                      <!--Recupera tu maleta-->
+                        <div class="page" id="p2">
+                          <section class="main-text"><p class="title">Recupera tu equipaje</p>
+                            <div>
+                                <button id="encode-decode-button" title="Recupera tus maletas" alt="Decode" type="button" class="btn btn-outline-dark"><a href="encode.html">¡Vamos!</a></button>
+                               </div>
+                          </section>
+                        </div>  
+                        <!--Ingresa tus datos para mayor seguridad-->
+                        <div class="page" id="p3">
+                          <section class="main-text"><p class="title">Guarda los datos de tus maletas</p>
+                            <form>
+                                <div class="form-row">
+                                   <!--Nombre-->
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nombre</label>
+                                    <input type="name" class="form-control" id="inputName" placeholder="Ingresa tu nombre completo">
+                                  </div>
+                                  <!--Email-->
+                                  <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu email">
+                                  </div>
+                                </div>
+                                <!--Dirección-->
+                                <div class="form-group">
+                                  <label for="inputAddress">Dirección</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="Ingresa tu dirección">
+                                </div>
+                                <!--Aerolínea, origen y destino-->
+                                <div class="form-group">
+                                  <label for="inputAirline">Aerolínea, origen y destino</label>
+                                  <input type="text" class="form-control" id="inputAirline" placeholder="Ingresa la aerolínea , el origen y el destino">
+                                </div>
+                                <!---Número de vuelo-->
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">Número de vuelo</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <button id="form-button" type="button" class="btn btn-outline-primary">Guardar</button>
+                              </form>
+                          </section>
+                        </div>
+                        <!--¿Tienes una duda?-->
+                        <div class="page" id="p4">
+                          <section class="main-text">
+                            <p id="about-us" class="title">¿Tienes alguna duda?</p>
+                            <p id="about-us"> Safe case es una aplicación que te permite tener un cifrado único para cada maleta que documentes. </p>
+                            <p class="hint">¿Quieres saber más?<a href="FAQ.html"> Visita nuestra sección de Frecuent Ask Questions</a></p>
+                          </section>
+                        </div> 
+                        <!--Más-->
+                        <!-- <div class="page" id="p5">
+                          <section class="icon fa fa-plus-circle">
+                            <p class="title">Más</p>
+                            <p class="hint">
+                              <span>You love one page & CSS only stuff? </span><br/>
+                              <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
+                            </p>
+                          </section>
+                        </div>  -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+</body>
+</html>

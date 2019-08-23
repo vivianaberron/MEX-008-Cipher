@@ -1,3 +1,121 @@
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: #2B2B2B;;
+    margin: 0 auto;
+    top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+/*Menu*/
+a {
+  text-decoration: none;
+}
+
+.menu {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    order: -1;
+  
+    }
+  
+    .menu > li {
+      float: left;
+    }
+  
+    .menu li a {
+      background-color: black;
+      color: white;
+      padding: 1rem 1rem;
+      text-decoration: none;
+      display: block;
+    }
+  
+    .menu li a:hover {
+      background-color: #6F9BB4;
+  
+    }
+  
+    .menu ul {
+      display: none;
+      position: absolute;
+      min-width: 35vh;
+    }
+  
+    .menu li:hover > ul {
+      display:block;
+  }
+  
+  .menu ul li {
+      position:relative;
+  }
+  
+  .menu i  {
+    margin-right: 2rem;
+    font-size: 2rem;
+    border-radius: 0.2rem;
+    margin-left: 1rem;
+  }
+  
+  li {
+    list-style: none;
+  
+  }
+  .nomobile-menu {
+    display: none;
+  }
+  
+  @media only screen and (min-width:768px) {
+    section, nav {
+      width: 80vw;
+      margin: 0 auto;
+  }
+  
+  header {
+      padding: 1rem 0;
+  }
+  
+  nav {
+      position: relative;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .nomobile-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-top: 3%;
+    margin-right: 0%;
+    color: white;
+  }
+  
+  .nomobile-menu li {
+    display: inline;
+  
+  }
+  
+  .nomobile-menu a {
+    margin-right: 3rem;
+    color: #191C26;
+  }
+  .nomobile-menu a:hover {
+    background-color: #6F9BB4;
+    padding: 1rem 1rem;
+  
+  }
+  }
+
+
 .font {
     font-family: 'Barlow', sans-serif;
     font-size: 70px;
@@ -5,6 +123,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 #font2 {
     font-family: 'Barlow', sans-serif;
     font-size: 40px;
@@ -20,23 +139,67 @@
     text-align: center;
 
 }
-.aeropuerto {
+.airport {
     background-image:url(svg/aeropuerto-personas.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
    background-position: absolute;
+   width: 100vw;
+   height: 100vh;
    
 
 }
 
+
+
+#info-text {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
+
 .opacidad {
-   background-color: #BBBBB9;
-   opacity:0.9; /* Opacidad 70% */
-   width: 700px;
-   height: 550px;
+   background-color: rgb(195, 212, 233);
+   opacity:0.9; /* Opacidad 90% */
+   width: 40vw;
+   height: 70vh;
    margin: auto;
    text-align: center;
+   padding: 1rem;
+}
+
+.opacidad p {
+  font-size: 1.5rem;
+}
+
+.opacidad * {
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width:768px) {
+  .opacidad {
+    display: flex;
+    background-color: rgb(195, 212, 233);
+    opacity:0.9; /* Opacidad 90% */
+    width: 40vw;
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+ }
+ .opacidad h1 {
+   font-size: 1.3rem;
+ }
+ .opacidad p {
+   font-size: 0.9rem;
+ }
+ 
+ .opacidad * {
+   margin-top: 1rem;
+ }
 }
 
 .button1 {
@@ -412,6 +575,35 @@
    text-decoration: none;
   width: 200px;
   height: 40px;
- 
+}
 
+/*Footer*/
+footer {
+    background-color: #2B2B2B;
+    height: 100%;
+    color: white;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  footer li {
+      margin-top: 0.8rem;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #6F9BB4;
+}
+
+.footer-menu a:hover {
+  color: #191C26;
+}
+
+#start-now {
+  color: black;
+}
+
+#start-now:hover {
+  color: white;
 }
